@@ -342,7 +342,7 @@ function watcherProcedure(runtime) {
   if (distanceNumber < 90) {
     // short melee range
 
-    if (70 < uiLifeBar.width) {
+    if (60 < uiLifeBar.width) {
       // phase 1
 
       // Select a random attack
@@ -381,7 +381,7 @@ function watcherProcedure(runtime) {
   } else {
     // long range
 
-    if (70 < uiLifeBar.width) {
+    if (60 < uiLifeBar.width) {
       // phase 1
 
       // Select a random attack
@@ -835,7 +835,7 @@ function getInputs(runtime) {
     setTimeout(() => {
       pv.dashing = "N";
       pv.pspeed = PSPEED;
-    }, 300);
+    }, 400);
 
     setTimeout(() => (pv.dashInCooldown = false), 500);
   }
@@ -921,7 +921,7 @@ function calcurateBossDamage(damage) {
 
     // Damage is enough to kill the boss, so it dies
   } else {
-    uiLifeBar.width = 0;
+    uiLifeBar.width <= 0;
     bossModel.setFaceObject("right", texture.bIdle);
     bossCol.behaviors.Tween.startTween("z-elevation", -64, 2, "in-sine");
     stopEverything(runtime);
@@ -1175,7 +1175,7 @@ async function doJenaSupermoveCut() {
       cutlinePostion[1]
     );
 
-    checkAttackCollide(3, "cut");
+    checkAttackCollide(5, "cut");
     await delay(100);
     targetModel.destroy();
   }

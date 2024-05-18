@@ -5,13 +5,13 @@ class Stage2 {
     // runtime
     this.runtime = runtime;
 
-    this.fieldX = 1252;
-    this.fieldY = 1254;
+    this.fieldX = 1024;
+    this.fieldY = 768;
 
-    this.playerColX = 136;
-    this.playerColY = 136;
+    this.playerColX = 236;
+    this.playerColY = 236;
 
-    this.bossColX = 200;
+    this.bossColX = 900;
     this.bossColY = 576;
   }
 }

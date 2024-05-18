@@ -8,11 +8,11 @@ const PLAYERMODELHEIGHT = 60; // height
 const PLAYERMAXHEALTH = 2;
 const PSPEED = 0.6; // Player speed
 const PDASH = 4; // Dash multiplier
-const PDMG = 5; // Player damage
+const PDMG = 7; // Player damage
 const PLAYERSUPERMOVEDAMAGE = 10;
 const PLAYERSHIELDTIME = 1000; // shield time
 const PLAYERATTACKDISTANCE = 76; // attack distance
-const STARTTENSION = 20
+const STARTTENSION = 50
 
 const BOSSPROJSPEED = 355; // How fast the boss projectiles move
 const BOSSSPEED = 275; // How fast the boss moves
